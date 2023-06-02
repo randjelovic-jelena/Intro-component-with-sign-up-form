@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Intro component with sign up form">
+  <meta name="author" content="Jelena Randjelovic">
+  <meta name="keywords" content="sign up, form, frontend mentor, component, learn">
+  <!--Logo-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Css-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <!--MAIN TEXT-->
+    <div class="container-info">
+      <h1 class="main-heading">Learn to code by watching others</h1>
+      <p class="main-text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <!--FORM-->
+    <div class="container-form">
+      <!--form header-->
+      <header class="form-header">
+        <p  class="form-header-text">Try it free 7 days<span> then $20/mo. thereafter</span></p>
+      </header>
+      <!--form-->
+      <form class="form-group" autocomplete="on">
+        <p class="success-message"></p>
+        <div class="input-group">
+          <input type="text" id="user-name" class="input-field " required placeholder="Name" title="Name must contain at least 4 characters"/>
+          <span class="input-message wrong-name"></span>
+        </div>
+          <div class="input-group">
+            <input type="text"id="user-lastname" class="input-field" required placeholder="Last Name" title="Name must contain at least 3 characters"/>
+            <span class="input-message wrong-lastname"></span>
+          </div>
+          <div class="input-group">
+            <input type="email" id="user-email"class="input-field" required placeholder="Email Address" title="Email address must be in format jsmith@example.com"/>
+            <span class="input-message wrong-email"></span>
+          </div>
+          <div class="input-group">
+            <input type="password" id="user-password"class="input-field" required placeholder="Password" title="at least 8-characters,signs ,numbers, must be without space"/>
+            <span class="input-message wrong-password"></span>
+          </div>
+          <button type="submit"id="submit-btn"class="submit-btn">Claim your free trial </button>
+          <p class="terms">By clicking the button, you are agreeing to our <a href="#" class="terms-link">Terms and Services</a></p>
+        </form><!--form end-->
+      
+    </div><!--container form end-->
+
+  </main>
+
+  
+  <!--JavaScript-->
+  <script src="js/main.js"></script>
+</body>
+</html>
